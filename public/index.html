@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+
+    /*.chart rect {*/
+        /*fill: steelblue;*/
+    /*}*/
+
+    .bar:hover {
+        fill: orangered ;
+    }
+
+    .chart text {
+        fill: white;
+        font: 10px sans-serif;
+        text-anchor: middle;
+    }
+
+    .d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+    }
+
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+    }
+
+    /* Style northward tooltips differently */
+    .d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+    }
+</style>
+
+<body>
+<svg class="chart"></svg>
+
+<script src="js/colorbrewer.min.js"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script>
+
+    var margin = {top: 100, right: 20, bottom: 30, left: 40},
+        width = 1800 - margin.left - margin.right,
+        height = 900 - margin.top - margin.bottom;
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var chart = d3.select(".chart")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html(function(d) {
+            return "<strong>Altitude:</strong> <span style='color:deepskyblue'>" + Math.floor(d.altitude_ft) + " ft</span><br>" +
+                    "<strong>Temperature:</strong> <span style='color:deepskyblue'>" + d.temp_f + " F</span><br>" +
+                    "<strong>Speed:</strong> <span style='color:deepskyblue'>" + d.speed + " mi/hr</span><br>";
+        })
+
+    chart.call(tip);
+
+    var multiple = 30;
+    d3.json("data/ts_data_" + multiple + ".json", function(error, data) {
+
+        y.domain([0, d3.max(data, function(d) {
+            return d.altitude_ft;
+        })]);
+
+        var colorScale = d3.scale.linear()
+            .range(colorbrewer.RdYlBu[8])
+            .domain([80, 60, 50, 30, 0, -40, -50, -70])
+
+        var barWidth = width / data.length;
+
+        var bar = chart.selectAll("g")
+            .data(data)
+            .enter()
+            .append("g")
+            .attr("transform", function(d, i) {
+                return "translate(" + i * barWidth + ",0)";
+            });
+
+        bar.append("rect")
+            .attr("y", function(d) {
+                return y(d.altitude_ft);
+            })
+            .attr("height", function(d) {
+                return height - y(d.altitude_ft);
+            })
+            .attr("width", barWidth - 1)
+            .attr("class", "bar")
+            .style("fill", function(d) {
+                return colorScale(d.temp_f);
+            })
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide)
+
+    });
+
+</script>
+</body>
+</html>
