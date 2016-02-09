@@ -73,9 +73,9 @@
         .attr('class', 'd3-tip')
         .offset([-10, 0])
         .html(function(d) {
-            return "<strong>Altitude:</strong> <span style='color:deepskyblue'>" + Math.floor(d.altitude_ft) + " ft</span><br>" +
-                    "<strong>Temperature:</strong> <span style='color:deepskyblue'>" + d.temp_f + " F</span><br>" +
-                    "<strong>Speed:</strong> <span style='color:deepskyblue'>" + d.speed + " mi/hr</span><br>";
+            return "<span style='color: lightgrey'><strong>Altitude:</strong> </span><span style='color:deepskyblue; font-size: 120%;'>" + Math.floor(d.altitude_ft) + "</span> ft<br>" +
+                    "<span style='color: lightgrey'><strong>Temperature:</strong></span> <span style='color:deepskyblue; font-size: 120%'>" + d.temp_f.toFixed(0) + "</span> °F<br>" +
+                    "<span style='color: lightgrey'><strong>Speed:</strong></span> <span style='color:deepskyblue; font-size: 120%'>" + d.speed.toFixed(0) + "</span> mi/hr<br>";
         })
 
     chart.call(tip);

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fdd3e5f-dc33-411c-be5d-83d776fc23b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -98,12 +97,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18843284">
-              <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.25839552">
+              <caret line="76" column="160" selection-start-line="76" selection-start-column="160" selection-end-line="76" selection-end-column="160" />
               <folding>
-                <marker date="1454995543000" expanded="true" signature="1815:1832" placeholder="..." />
-                <marker date="1454995543000" expanded="true" signature="1949:1966" placeholder="..." />
-                <marker date="1454995543000" expanded="true" signature="2059:2076" placeholder="..." />
+                <marker date="1454996304000" expanded="true" signature="1788:1804" placeholder="..." />
+                <marker date="1454996304000" expanded="true" signature="1853:1870" placeholder="..." />
+                <marker date="1454996304000" expanded="true" signature="1853:1888" placeholder="..." />
+                <marker date="1454996304000" expanded="true" signature="1975:1991" placeholder="..." />
+                <marker date="1454996304000" expanded="true" signature="2043:2060" placeholder="..." />
+                <marker date="1454996304000" expanded="true" signature="2043:2077" placeholder="..." />
+                <marker date="1454996304000" expanded="true" signature="2158:2174" placeholder="..." />
+                <marker date="1454996304000" expanded="true" signature="2220:2237" placeholder="..." />
+                <marker date="1454996304000" expanded="true" signature="2220:2254" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -291,20 +296,20 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -487,12 +492,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18843284">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.25839552">
+          <caret line="76" column="160" selection-start-line="76" selection-start-column="160" selection-end-line="76" selection-end-column="160" />
           <folding>
-            <marker date="1454995543000" expanded="true" signature="1815:1832" placeholder="..." />
-            <marker date="1454995543000" expanded="true" signature="1949:1966" placeholder="..." />
-            <marker date="1454995543000" expanded="true" signature="2059:2076" placeholder="..." />
+            <marker date="1454996304000" expanded="true" signature="1788:1804" placeholder="..." />
+            <marker date="1454996304000" expanded="true" signature="1853:1870" placeholder="..." />
+            <marker date="1454996304000" expanded="true" signature="1853:1888" placeholder="..." />
+            <marker date="1454996304000" expanded="true" signature="1975:1991" placeholder="..." />
+            <marker date="1454996304000" expanded="true" signature="2043:2060" placeholder="..." />
+            <marker date="1454996304000" expanded="true" signature="2043:2077" placeholder="..." />
+            <marker date="1454996304000" expanded="true" signature="2158:2174" placeholder="..." />
+            <marker date="1454996304000" expanded="true" signature="2220:2237" placeholder="..." />
+            <marker date="1454996304000" expanded="true" signature="2220:2254" placeholder="..." />
           </folding>
         </state>
       </provider>
